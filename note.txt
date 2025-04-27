@@ -6,5 +6,6 @@ pip install coverage pytest-cov
 run: pytest --cov=login test_login.py
 run: coverage html
 
-UI Integration:
+UI Integration automation:
 pytest -s test_web_ui.py
+

@@ -4,7 +4,11 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>Welcome to the Dashboard!</h2>
+    <h2>Welcome to the Dashboard, {{ username }}!</h2> {# Display username if stored #}
     <p>You have successfully logged in.</p>
+
+    {# Add a link to the logout route #}
+    <p><a href="{{ url_for('logout_route') }}">Logout</a></p>
+
 </body>
 </html>

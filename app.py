@@ -1,9 +1,11 @@
 # app.py
 from flask import Flask, render_template, request, redirect, url_for
 from login import login # Import the login function
+import os # Import os for secret key
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here' # Needed for flashing messages or sessions
+# Use a secret key from environment or default for example
+app.secret_key = os.environ.get('SECRET_KEY', 'your_default_secret_key_for_testing')
 
 # Simple "database" check (replace with actual logic)
 def check_credentials(username, password):
