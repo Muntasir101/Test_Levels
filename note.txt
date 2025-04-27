@@ -1,0 +1,7 @@
+basic unit test by pytest:
+run: pytest
+
+install coverage package:
+pip install coverage pytest-cov
+run: pytest --cov=login test_login.py
+run: coverage html
